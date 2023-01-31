@@ -1,6 +1,6 @@
 nav {
   position: fixed;
-  
+
   height: 120px;
   width: 100%;
   background-color: #4056A1;
@@ -15,7 +15,7 @@ nav {
 
 }
 
-.new-tweet {
+.new {
   font-size: 25px;
   font-family: 'Source Sans Pro', sans-serif;
   display: flex;
