@@ -15,7 +15,7 @@ html {
  */
 
 body {
-  color: #ffffff;
+  color: #3b3b3b;
   background-color: #f4f1ec;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
@@ -26,7 +26,7 @@ nav {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   background-color: #f4f1ec;
 
   display: flex;
@@ -34,9 +34,10 @@ nav {
 }
 
 main {
+  margin: auto;
   width: 90%;
+  padding: 50px;
   background-color: #f4f1ec;
-
-  display: flex;
-  justify-content: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
 }

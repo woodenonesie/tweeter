@@ -1,0 +1,46 @@
+section {
+  width: 90%;
+  padding: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+label {
+  margin-bottom: 1em;
+}
+
+textarea {
+  background-color: #f4f1ec;
+  outline: none;
+  border: none;
+  resize: none;
+
+  border-bottom: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #3b3b3b;
+}
+
+button {
+  background-color: #4056A1;
+  color: #FFFFFF;
+  font-family: 'Bungee', cursive;
+  padding: 8px;
+  border-radius: 0px;
+  border: none;
+}
+
+output {
+  font-family: 'Bungee', cursive;
+}
+
+.button-countdoun {
+  margin-top: 1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
