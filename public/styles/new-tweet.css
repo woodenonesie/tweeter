@@ -24,6 +24,14 @@ textarea {
   border-bottom-color: #3b3b3b;
 }
 
+.red {
+  color: red;
+}
+
+output {
+  font-family: 'Bungee', cursive;
+}
+
 button {
   background-color: #4056A1;
   color: #FFFFFF;
@@ -31,10 +39,6 @@ button {
   padding: 8px;
   border-radius: 0px;
   border: none;
-}
-
-output {
-  font-family: 'Bungee', cursive;
 }
 
 .button-countdoun {

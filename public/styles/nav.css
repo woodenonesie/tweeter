@@ -14,6 +14,10 @@ nav {
   justify-content: space-between;
 }
 
+span {
+  font-family: 'Bungee', cursive;
+}
+
 .new {
   font-size: 25px;
   font-family: 'Source Sans Pro', sans-serif;
@@ -25,8 +29,4 @@ nav {
 i {
   size: 10px;
   color: #e94326;
-}
-
-span {
-  font-family: 'Bungee', cursive;
 }
