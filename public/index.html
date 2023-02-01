@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
   <link rel="stylesheet" href="styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="styles/tweets.css" type="text/css" />
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -32,15 +33,14 @@
 </head>
 
 <body>
-  <!-- Top nav bar (fixed) -->
   <nav>
     <span>tweeter</span>
     <span class="new">
       <div><b>Write</b> a new tweet</div>
-      <i class="fa-solid fa-angles-down"></i>
+      <i class="fa-solid fa-angles-down arrows"></i>
     </span>
   </nav>
-  <header>
+  <header class="main-header">
     <div>
       <img src="/images/profile-hex.png">
     </div>
@@ -50,7 +50,6 @@
     </div>
   </header>
 
-  <!-- Page-specific (main) content here -->
   <main class="container">
     <section class="new-tweet">
       <form method="GET" action="/tweets/">
@@ -62,21 +61,25 @@
         </div>
       </form>
     </section>
+    <article>
+      <header class="article-header">
+        <div class="user-info">
+          <i class="fa-solid fa-user-astronaut fa-4x avatar"></i>
+          <h4> Your name </h4>
+        </div>
+        <h4 class="nickname"> @YourName</h4>
+      </header>
+      <p class="article-tweet"> My Tweet</p>
+      <footer class="article-footer">
+        <p> 1 day ago </p>
+        <div class="icons-article">
+        <i class="fa-solid fa-flag"></i>
+        <i class="fa-solid fa-retweet"></i>
+        <i class="fa-solid fa-heart"></i>
+      </div>
+      </footer>
+    </article>
   </main>
-  <article>
-    <header> 
-      <i class="fa-light fa-user-tie-hair-long"></i>
-      <h4> Your name </h4>
-      <h4> @YourName</h4>
-    </header>
-    <p> My Tweet</p>
-    <footer>
-    <p> 1 day ago </p>
-    <i class="fa-solid fa-flag"></i>
-    <i class="fa-solid fa-retweet"></i>
-    <i class="fa-solid fa-heart"></i>
-    </footer>
-  </article>
 </body>
 
 </html>

@@ -10,27 +10,12 @@ html {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
 body {
   color: #3b3b3b;
   background-color: #f4f1ec;
+
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
-}
-
-nav {
-  font-family: 'Bungee', cursive;
-}
-
-.container {
-  width: 100%;
-  background-color: #f4f1ec;
-
-  display: flex;
-  justify-content: center;
 }
 
 main {
@@ -38,6 +23,17 @@ main {
   width: 90%;
   padding: 50px;
   background-color: #f4f1ec;
-  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  background-color: #f4f1ec;
+
+  display: flex;
+  flex-direction: column;
 }
