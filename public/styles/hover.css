@@ -1,0 +1,15 @@
+.fa-flag:hover {
+  color: #eda30e;
+}
+
+.fa-retweet:hover {
+  color: #eda30e;
+}
+
+.fa-heart:hover {
+  color: #eda30e;
+}
+
+article:hover {
+  box-shadow: 10px 10px 5px #4057a1a1;
+}

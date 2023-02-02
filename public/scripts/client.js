@@ -1,9 +1,46 @@
 $(document).ready(function () {
-  const createTweetElement = function (tweetObj) {
+
+  const data = [
+    {
+      "user": {
+        "name": "Newton",
+        "avatars": "https://i.imgur.com/73hZDYK.png"
+        ,
+        "handle": "@SirIsaac"
+      },
+      "content": {
+        "text": "If I have seen further it is by standing on the shoulders of giants"
+      },
+      "created_at": 1461116232227
+    },
+    {
+      "user": {
+        "name": "Descartes",
+        "avatars": "https://i.imgur.com/nlhLi3I.png",
+        "handle": "@rd"
+      },
+      "content": {
+        "text": "Je pense , donc je suis"
+      },
+      "created_at": 1461113959088
+    }
+  ]
+
+  const renderTweets = function (tweets) {
+    for (const tweet of tweets) {
+      const newTweet = createTweetElement(tweet);
+      $('#tweets-container').append(newTweet);
+    }
+    // loops through tweets
+    // calls createTweetElement for each tweet
+    // takes return value and appends it to the tweets container
+  }
+  //adds new tweets in html format
+  const createTweetElement = function (tweetData) {
     const user = tweetData["user"]
     const date = new Date(tweetData["created_at"]);
     const content = tweetData["content"]
-    const tweet = `<article>
+    const $tweet = `
       <header class="article-header">
         <div class="user-info">
           <i class="avatar" src=${user["avatars"]} alt="avatar"></i>
@@ -20,12 +57,11 @@ $(document).ready(function () {
         <i class="fa-solid fa-heart"></i>
       </div>
       </footer>
-    </article>`
-    return tweet;
+    `
+
+    return $tweet;
   }
-  const $tweet = createTweetElement(tweetData);
-  console.log($tweet);
-  $('#tweets-container').append($tweet);
+  renderTweets(data);
 })
 
 
