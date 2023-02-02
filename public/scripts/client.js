@@ -27,13 +27,13 @@ $(document).ready(function () {
   ]
 
   const renderTweets = function (tweets) {
+    // loops through tweets
     for (const tweet of tweets) {
+      // calls createTweetElement for each tweet
       const newTweet = createTweetElement(tweet);
+      // takes return value and appends it to the tweets container
       $('#tweets-container').append(newTweet);
     }
-    // loops through tweets
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container
   }
   //adds new tweets in html format
   const createTweetElement = function (tweetData) {
@@ -63,6 +63,10 @@ $(document).ready(function () {
     return $tweet;
   }
   renderTweets(data);
+
+  const loadtweets = function() {
+    $.ajax('http://localhost:8080/tweets ', { method: 'GET' })
+  }
 })
 
 
