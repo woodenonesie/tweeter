@@ -40,7 +40,7 @@ $(document).ready(function () {
     const user = tweetData["user"]
     const date = new Date(tweetData["created_at"]);
     const content = tweetData["content"]
-    const $tweet = `
+    const $tweet = `<article>
       <header class="article-header">
         <div class="user-info">
           <i class="avatar" src=${user["avatars"]} alt="avatar"></i>
@@ -57,6 +57,7 @@ $(document).ready(function () {
         <i class="fa-solid fa-heart"></i>
       </div>
       </footer>
+      </article>
     `
 
     return $tweet;
