@@ -17,7 +17,7 @@ $(document).ready(function () {
   //adds new tweets in html format
   const createTweetElement = function (tweetData) {
     const user = tweetData["user"]
-    const date = new Date(tweetData["created_at"]);
+    const date = timeago.format(tweetData["created_at"]);
     const content = tweetData["content"]
     const $tweet = `<article>
       <header class="article-header">
