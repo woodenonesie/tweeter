@@ -69,6 +69,15 @@ article {
 .fa-flag,
 .fa-retweet,
 .fa-heart {
+  color: #4056A1;
   margin-right: 20px;
   float: left;
+}
+
+.hover-shadow {
+  box-shadow: 10px 10px 5px #4057a1a1;
+}
+
+.selected {
+  color: #eda30e;
 }
