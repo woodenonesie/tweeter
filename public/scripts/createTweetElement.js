@@ -1,10 +1,10 @@
 let createTweetElement;
 
 //convert tweets to html format
-$(document).ready(function () {
-createTweetElement = function (tweetData) {
+$(document).ready(function() {
+  createTweetElement = function(tweetData) {
     //accessing data that we need to create a tweet
-    const user = tweetData["user"]
+    const user = tweetData["user"];
     const date = timeago.format(tweetData["created_at"]);
     const content = tweetData["content"];
     const tweetText = content["text"];
@@ -28,8 +28,8 @@ createTweetElement = function (tweetData) {
     </div>
     </footer>
     </article>
-  `
+  `;
     //returns chunck of html code with all the needed information
     return $tweet;
-  }
-})
+  };
+});

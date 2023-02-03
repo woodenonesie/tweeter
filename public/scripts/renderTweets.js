@@ -1,8 +1,8 @@
 let renderTweets;
 
 // adds all tweets from database to the page
-$(document).ready(function () {
-  renderTweets = function (tweets) {
+$(document).ready(function() {
+  renderTweets = function(tweets) {
     $('#tweets-container').empty();
     // loops through tweets
     for (const tweet of tweets.reverse()) {
@@ -11,5 +11,5 @@ $(document).ready(function () {
       // takes return value and appends it to the tweets container
       $('#tweets-container').append(newTweet);
     }
-  }
-})
+  };
+});
