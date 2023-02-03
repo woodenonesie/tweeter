@@ -36,12 +36,14 @@ article header div {
 }
 
 article p {
+  width: 90%;
   margin-left: 3em;
   margin-right: 3em;
   margin-bottom: 2em;
 
   display: flex;
   align-items: center;
+  word-wrap: break-word;
 }
 
 article footer {
