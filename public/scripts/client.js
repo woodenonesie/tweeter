@@ -1,11 +1,20 @@
 let loadtweets
 
 $(document).ready(function () {
+  //escapes unsafe characters
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
   //convert tweets to html format
   const createTweetElement = function (tweetData) {
     const user = tweetData["user"]
     const date = timeago.format(tweetData["created_at"]);
-    const content = tweetData["content"]
+    const content = tweetData["content"];
+    const tweetText = content["text"];
+    const safeTweet = escape(tweetText);
+    
     const $tweet = `<article>
       <header class="article-header">
         <div class="user-info">
@@ -14,7 +23,7 @@ $(document).ready(function () {
         </div>
         <h4 class="nickname"> ${user["handle"]} </h4>
       </header>
-      <p class="article-tweet"> ${content["text"]}</p>
+      <p class="article-tweet"> ${safeTweet}</p>
       <footer class="article-footer">
         <p> ${date} </p>
         <div class="icons-article">
