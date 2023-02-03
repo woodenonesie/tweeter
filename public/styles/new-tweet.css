@@ -3,17 +3,17 @@ section {
   padding: 1em;
 }
 
-form {
+section form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-label {
+section form label {
   margin-bottom: 1em;
 }
 
-textarea {
+section form textarea {
   background-color: #f4f1ec;
   outline: none;
   border: none;
@@ -28,23 +28,23 @@ textarea {
   color: red;
 }
 
-output {
+section form div {
+  margin-top: 1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section form div output {
   font-family: 'Bungee', cursive;
 }
 
-button {
+section form div button {
   background-color: #4056A1;
   color: #FFFFFF;
   font-family: 'Bungee', cursive;
   padding: 8px;
   border-radius: 0px;
   border: none;
-}
-
-.button-countdoun {
-  margin-top: 1em;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }

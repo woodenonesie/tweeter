@@ -14,19 +14,19 @@ $(document).ready(function () {
     const content = tweetData["content"];
     const tweetText = content["text"];
     const safeTweet = escape(tweetText);
-    
+
     const $tweet = `<article>
-      <header class="article-header">
-        <div class="user-info">
-        <img class="avatar" src="${user["avatars"]}"></img>
+      <header>
+        <div>
+          <img class="avatar" src="${user["avatars"]}"></img>
           <h4> ${user["name"]} </h4>
         </div>
-        <h4 class="nickname"> ${user["handle"]} </h4>
+        <h4> ${user["handle"]} </h4>
       </header>
-      <p class="article-tweet"> ${safeTweet}</p>
-      <footer class="article-footer">
+      <p> ${safeTweet}</p>
+      <footer>
         <p> ${date} </p>
-        <div class="icons-article">
+        <div>
         <i class="fa-solid fa-flag"></i>
         <i class="fa-solid fa-retweet"></i>
         <i class="fa-solid fa-heart"></i>
