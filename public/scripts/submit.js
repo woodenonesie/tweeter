@@ -9,13 +9,14 @@ $(document).ready(function() {
     //
     const tweet = $("textarea").val();
     //checking if tweets are not empty or longer than 140 characters and
-    checkError(tweet); //scripts/checkError.js
     //changes an error message
+    checkError(tweet); //scripts/checkError.js
     //posts data ftom form to /tweets
     $.ajax('/tweets', {
       method: 'POST',
       data
     })
-      .then(loadtweets); //function from client.js
+    .then(loadtweets) //function from client.js
+    .then($('#tweet-text').val(""))
   });
 });
