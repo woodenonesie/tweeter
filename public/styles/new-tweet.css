@@ -44,17 +44,17 @@ section form div button {
   background-color: #4056A1;
   color: #FFFFFF;
   font-family: 'Bungee', cursive;
-  padding: 8px;
+  padding: 0.3em;
   border-radius: 0px;
   border: none;
 }
 
-.error {
+#error {
   color: tomato;
   width: 100%;
-  padding: 1em;
-  margin-bottom: 1em;
-  margin-top: 1em;
+  padding: 0.2em;
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
   border: 3px;
   border-style: solid;
   border-color: tomato;
@@ -62,4 +62,6 @@ section form div button {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  display: none;
 }

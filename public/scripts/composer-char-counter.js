@@ -2,7 +2,7 @@ $(document).ready(function () {
 
   $("textarea").on("input", function () {
     let text = $(this).val();
-    let form = $(this).siblings(".button-countdoun");
+    let form = $(this).siblings("div");
     let counter = form.children(".counter");
     let remainingChar = 140 - text.length;
     counter.text(remainingChar);

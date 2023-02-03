@@ -12,7 +12,7 @@ article {
   background-color: #f4f1ec;
   background-image: none;
   color: #3b3b3b;
-  font-size: 30px;
+  font-size: 2rem;
 
   display: flex;
   align-items: center;
@@ -27,7 +27,7 @@ article header div {
 }
 
 .avatar {
-  margin-right: 20px;
+  margin-right: 1em;
 }
 
 .handle {
@@ -38,7 +38,7 @@ article header div {
 article p {
   margin-left: 3em;
   margin-right: 3em;
-  margin-bottom: 20px;
+  margin-bottom: 2em;
 
   display: flex;
   align-items: center;
@@ -53,7 +53,7 @@ article footer {
   border-top: 3px;
   border-top-style: solid;
   border-top-color: #3b3b3b;
-  font-size: 20px;
+  font-size: 1.3rem;
 
   display: flex;
   align-items: center;
@@ -70,12 +70,12 @@ article footer div {
 .fa-retweet,
 .fa-heart {
   color: #4056A1;
-  margin-right: 20px;
+  margin-right: 1em;
   float: left;
 }
 
 .hover-shadow {
-  box-shadow: 10px 10px 5px #4057a1a1;
+  box-shadow: 0.2em 0.2em 0.2em #4057a1a1;
 }
 
 .selected {

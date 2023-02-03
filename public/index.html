@@ -36,6 +36,7 @@
   <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   <script type="text/javascript" src="/scripts/submit.js"></script>
+  <script type="text/javascript" src="/scripts/checkError.js"></script>
 </head>
 
 <body>
@@ -57,8 +58,8 @@
   </header>
 
   <main>
-    <div class="error">
-      <p> error message </p>
+    <div id="error">
+      <p></p>
     </div>
     <section class="new-tweet">
       <form method="GET" action="/tweets/">
