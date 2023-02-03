@@ -16,12 +16,12 @@ $(document).ready(function () {
     const safeTweet = escape(tweetText);
 
     const $tweet = `<article>
-      <header>
+      <header class="article-header">
         <div>
           <img class="avatar" src="${user["avatars"]}"></img>
           <h4> ${user["name"]} </h4>
         </div>
-        <h4> ${user["handle"]} </h4>
+        <h4 class="handle"> ${user["handle"]} </h4>
       </header>
       <p> ${safeTweet}</p>
       <footer>

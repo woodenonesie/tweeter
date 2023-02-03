@@ -43,10 +43,10 @@
     <span>tweeter</span>
     <span class="new">
       <div><b>Write</b> a new tweet</div>
-      <i class="fa-solid fa-angles-down arrows"></i>
+      <i class="fa-solid fa-angles-down bounce"></i>
     </span>
   </nav>
-  <header>
+  <header class="page-header">
     <div>
       <img src="/images/profile-hex.png">
     </div>
@@ -56,7 +56,10 @@
     </div>
   </header>
 
-  <main class="container">
+  <main>
+    <div class="error">
+      <p> error message </p>
+    </div>
     <section class="new-tweet">
       <form method="GET" action="/tweets/">
         <label for="tweet-text">What are you humming about?</label>
