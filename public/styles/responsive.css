@@ -1,0 +1,23 @@
+@media only screen and (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-header {
+    width: 40vw;
+    height: 450px;
+    margin-top: 7em;
+    margin-left: 2em;
+  }
+
+  main {
+    width: 50vw;
+    padding-top: 120px;
+    margin: 2rem;
+  }
+
+  .article-header {
+    font-size: 1.5rem;
+  }
+}

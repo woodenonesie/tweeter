@@ -2,7 +2,7 @@ article {
   border: 3px;
   border-style: solid;
   border-color: #3b3b3b;
-  margin-top: 45px;
+  margin-top: 1em;
 }
 
 .article-header {
@@ -12,7 +12,7 @@ article {
   background-color: #f4f1ec;
   background-image: none;
   color: #3b3b3b;
-  font-size: 2rem;
+  font-size: 1.5rem;
 
   display: flex;
   align-items: center;
@@ -35,14 +35,14 @@ article header div {
   opacity: 0.5;
 }
 
-article p {
-  width: 90%;
-  margin-left: 3em;
-  margin-right: 3em;
-  margin-bottom: 2em;
+.article-content {
+  width: auto;
+  height: auto;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 1em;
 
   display: flex;
-  align-items: center;
   word-wrap: break-word;
 }
 

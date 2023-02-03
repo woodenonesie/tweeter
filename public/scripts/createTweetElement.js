@@ -18,7 +18,7 @@ $(document).ready(function() {
       </div>
       <h4 class="handle"> ${user["handle"]} </h4>
     </header>
-    <p> ${safeTweet}</p>
+    <p class="article-content"> ${safeTweet}</p>
     <footer>
       <p> ${date} </p>
       <div>
