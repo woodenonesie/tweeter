@@ -1,4 +1,4 @@
-let loadtweets;
+let loadtweets; //used in submit.js
 //loads tweets from database to the page
 $(document).ready(function() {
   //gets tweets as JSON file from /tweets

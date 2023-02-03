@@ -1,4 +1,4 @@
-let createTweetElement;
+let createTweetElement; //used further in renderTweets.js
 
 //convert tweets to html format
 $(document).ready(function() {

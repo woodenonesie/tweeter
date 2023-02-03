@@ -1,4 +1,4 @@
-let renderTweets;
+let renderTweets; //used in client.js
 
 // adds all tweets from database to the page
 $(document).ready(function() {

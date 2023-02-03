@@ -1,3 +1,4 @@
+//after pressing submit, valid tweet adds to the page
 $(document).ready(function() {
   //listener for submit event
   $("form").on("submit", function(event) {
