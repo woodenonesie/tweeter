@@ -1,22 +1,18 @@
 nav {
   position: fixed;
 
-  height: 120px;
+  height: 17vh;
   width: 100%;
   background-color: #4056A1;
   color: #FFFFFF;
   font-family: 'Bungee', cursive;
-  font-size: 40px;
+  font-size: 2.5rem;
   padding-left: 1.5em;
   padding-right: 1.5em;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-span {
-  font-family: 'Bungee', cursive;
 }
 
 .new {
@@ -27,7 +23,7 @@ span {
   align-items: center;
 }
 
-.arrows {
+.fa-angles-down {
   size: 10px;
   color: #e94326;
 }
