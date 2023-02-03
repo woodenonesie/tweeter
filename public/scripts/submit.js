@@ -17,6 +17,6 @@ $(document).ready(function() {
       data
     })
     .then(loadtweets) //function from client.js
-    .then($('#tweet-text').val(""))
+    .then($('#tweet-text').val(""));
   });
 });
