@@ -1,7 +1,7 @@
 //after pressing submit, valid tweet adds to the page
-$(document).ready(function() {
+$(document).ready(function () {
   //listener for submit event
-  $("form").on("submit", function(event) {
+  $("form").on("submit", function (event) {
     //prevents default behevior
     event.preventDefault();
     //serializing data so we can pass it to the server
@@ -10,14 +10,16 @@ $(document).ready(function() {
     const tweet = $("textarea").val();
     //checking if tweets are not empty or longer than 140 characters and
     //changes an error message
-    checkError(tweet); //scripts/checkError.js
+    const invalidTweet = checkError(tweet); //scripts/checkError.js
     //posts data ftom form to /tweets
-    $.ajax('/tweets', {
-      method: 'POST',
-      data
-    })
-    .then(loadtweets) //function from client.js
-    .then($('textarea').val(""))
-    .then($(".counter").text(140));
+    if (!invalidTweet) {
+      $.ajax('/tweets', {
+        method: 'POST',
+        data
+      })
+        .then(loadtweets) //function from client.js
+        .then($('textarea').val(""))
+        .then($(".counter").text(140));
+    }
   });
 });
