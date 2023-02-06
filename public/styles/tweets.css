@@ -44,6 +44,7 @@ article header div {
 
   display: flex;
   word-wrap: break-word;
+  word-break: break-word;
 }
 
 article footer {
