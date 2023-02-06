@@ -1,6 +1,6 @@
 //checks if tweets are not empty or longer than 140 characters and
 //changes an error message. Returns true if error occurs
-const checkError = function(data) {
+const checkTweetError = function(data) {
   let errorMessage = "";
   if (data.length === 0 || data === null) {
     errorMessage = "⚠️Your tweet is empty💀";
