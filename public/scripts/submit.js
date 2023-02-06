@@ -9,7 +9,7 @@ $(document).ready(function () {
     //
     const tweet = $("textarea").val();
     //checking if tweets are not empty or longer than 140 characters and
-    //changes an error message
+    //changes an error message. Returns true if error occurs
     const invalidTweet = checkTweetError(tweet); //scripts/checkError.js
     //posts data ftom form to /tweets
     if (!invalidTweet) {
@@ -18,9 +18,8 @@ $(document).ready(function () {
         data
       })
         .then(loadtweets) //function from client.js
-        .then($('textarea').val(""))
-        .then($(".counter").text(140))
-        .fail(handleServerError)
+        .done(clearForm)
+        .fail(handleServerError) //handleServerError.js
     }
   });
 });

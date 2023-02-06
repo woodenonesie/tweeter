@@ -1,4 +1,4 @@
-// print the appropriate error message on the front-end side
+// prints the appropriate error message on the front-end side
 const handleServerError = function (jqXHR, textStatus, errorThrown) {
   const errorMessage = `${textStatus}: ${jqXHR.status} ${errorThrown}`;
   $("#error").slideUp("fast", () => {
