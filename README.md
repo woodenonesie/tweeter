@@ -18,6 +18,6 @@ This repository is the starter code for the project: Students will fork and clon
 - Node 5.10.x or above
 
 ## Screenshots
-- ['Desktop page with user's avatar, new form and tweets'](https://github.com/woodenonesie/tweeter/blob/master/docs/main-desktop.jpg?raw=true)
-- ['User's avatar and a form for the new tweet on a smaller screen'](https://github.com/woodenonesie/tweeter/blob/master/docs/smaller-screen-header.jpg?raw=true)
-- ['Tweets'](https://github.com/woodenonesie/tweeter/blob/master/docs/smaller-screen-tweets.jpg?raw=true)
+!['Desktop page with user's avatar, new form and tweets'](https://github.com/woodenonesie/tweeter/blob/master/docs/main-desktop.jpg?raw=true)
+!['User's avatar and a form for the new tweet on a smaller screen'](https://github.com/woodenonesie/tweeter/blob/master/docs/smaller-screen-header.jpg?raw=true)
+!['Tweets'](https://github.com/woodenonesie/tweeter/blob/master/docs/smaller-screen-tweets.jpg?raw=true)
